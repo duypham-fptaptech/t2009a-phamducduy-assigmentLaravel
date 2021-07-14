@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/userForm/create', [\App\Http\Controllers\UserController::class, 'userForm']);
-Route::get('/userForm', [\App\Http\Controllers\UserController::class, 'store']);
+Route::post('/userForm', [\App\Http\Controllers\UserController::class, 'store']);
 Route::get('/userForm', [\App\Http\Controllers\UserController::class, 'userList']);

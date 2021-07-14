@@ -29,6 +29,9 @@
         background-color: #f2f2f2;
         padding: 20px;
     }
+    .alert-danger{
+        color: red;
+    }
 </style>
 <body>
 
@@ -37,7 +40,7 @@
 </h3>
 
 <div>
-    <form action="/userForm" method="get">
+    <form action="/userForm" method="post">
         @csrf
         @if ($errors->any())
             <div class="alert alert-danger">
